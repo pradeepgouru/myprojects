@@ -1,0 +1,3 @@
+orcfile = "s3://dev.canopydata.com/pradeepg/tst_orc2/000000"
+df = sqlContext.read.format("orc").load(orcfile)
+df.write.format('json').option("header", "true").save('s3://dev.canopydata.com/pradeepg/tst_orcsss')
