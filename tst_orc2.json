@@ -1,0 +1,72 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\norcfile \u003d \"s3://dev.canopydata.com/pradeepg/tst_orc2/000000)\ndf \u003d sqlContext.read.format(\"orc\").load(orcfile)\ndf.write.format(\u0027json\u0027).option(\"header\", \"true\").save(\u0027s3://dev.canopydata.com/pradeepg/tst_orcsss\u0027)\nprint(\"testing\")",
+      "user": "pradeepg@qubole.com",
+      "dateUpdated": "May 2, 2019 3:40:24 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "paragraphProgress": {
+        "jobs": [],
+        "numCompletedTasks": 0,
+        "numTasks": 0,
+        "truncated": false
+      },
+      "version": "v1",
+      "jobName": "paragraph_1514530299944_963456869",
+      "id": "20171229-065139_268245014_q_RJWDMQTDQQ1514530299",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "Traceback (most recent call last):\n  File \"/tmp/zeppelin_pyspark-3762266816809222557.py\", line 319, in \u003cmodule\u003e\n    code \u003d compile(\u0027\\n\u0027.join(final_code), \u0027\u003cstdin\u003e\u0027, \u0027exec\u0027, ast.PyCF_ONLY_AST, 1)\n  File \"\u003cstdin\u003e\", line 1\n    orcfile \u003d \"s3://dev.canopydata.com/pradeepg/tst_orc2/000000)\n                                                               ^\nSyntaxError: EOL while scanning string literal\n"
+      },
+      "dateCreated": "Dec 29, 2017 6:51:39 AM",
+      "dateSubmitted": "May 2, 2019 3:40:24 PM",
+      "dateStarted": "May 2, 2019 3:40:27 PM",
+      "dateFinished": "May 2, 2019 3:40:55 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1514530323618_977707902",
+      "id": "20171229-065203_667495113_q_RJWDMQTDQQ1514530299",
+      "dateCreated": "Dec 29, 2017 6:52:03 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "tst_orc",
+  "id": "RJWDMQTDQQ1514530299",
+  "angularObjects": {
+    "2D3J5CCUU442641513600148911:shared_process": [],
+    "2D4ETKW6R442641513600148907:shared_process": [],
+    "2D4KS2C2S442641513600148889:RJWDMQTDQQ1514530299": [],
+    "2D1QYEFPR442641513600148917:shared_process": []
+  },
+  "config": {
+    "isDashboard": false
+  },
+  "info": {},
+  "source": "FCN"
+}
